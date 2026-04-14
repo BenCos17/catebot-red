@@ -1,0 +1,14 @@
+{
+  "author": ["bencos17"],
+  "description": "Catebot Baltimore Catechism lookup commands for Red.",
+  "install_msg": "Thanks for installing.",
+  "short": "Catebot lookup",
+  "min_bot_version": "3.5.0",
+  "max_bot_version": "0.0.0",
+  "hidden": false,
+  "disabled": false,
+  "required_cogs": {},
+  "requirements": [],
+  "tags": ["catechism", "lookup"],
+  "type": "COG"
+}

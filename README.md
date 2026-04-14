@@ -1,37 +1,37 @@
-# CateBot
-A reddit bot that is triggered by Catechism of the Catholic Church (CCC) paragraph references in reddit comments as well as references to other documents of the Roman Catholic Church. It posts the contents of the requested selection(s) as a reply to the comment that contained the request. For a full list of supported documents and subreddits, [see the CateBot FAQ](https://github.com/konohitowa/catebot/blob/master/docs/CateBot%20Info.md#faq)
+# CateBot Red Cog
 
-[See the bot in action!](http://www.reddit.com/user/CateBot)
+CateBot rewritten as a Red-DiscordBot cog for Catechism lookups.
 
-## Usage
-### Triggering the bot
-[Refer to the CateBot FAQ](https://github.com/konohitowa/catebot/blob/master/docs/CateBot%20Info.md#faq).
+## What this provides
 
-## Authors
-[/u/kono_hito_wa](http://reddit.com/u/kono_hito_wa)
+- A folder-based Red cog at `catebot/`
+- Data files stored in `catebot/data/`
+- Commands to query Baltimore Catechism questions and answers from local text files
+
+## Cog layout
+
+- `catebot/__init__.py`
+- `catebot/catebot.py`
+- `catebot/info.json`
+- `catebot/data/bccd_1.txt`
+- `catebot/data/bccd_2.txt`
+- `catebot/data/bccd_3.txt`
+- `catebot/data/bccd_4.txt`
+
+## Commands
+
+- `[p]bccd books`
+- `[p]bccd count [book]`
+- `[p]bccd question <number> [book]`
+- `[p]bccd random [book]`
+- `[p]bccd search <term> [book]`
+- `[p]bccd reload` (owner only)
+
+`[book]` is optional and defaults to `2`.
+
+## Notes
+
+- The cog reads the existing catechism data files and does not modify their contents.
 
 ## License
-	The MIT License (MIT)
-
-	Copyright (c) 2014 /u/kono_hito_wa
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in
-	all copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-	THE SOFTWARE.
-
-## Thanks
-[Matthieu Grieger](http://www.reddit.com/u/mgrieger) for [versebot](https://github.com/matthieugrieger/versebot), from which catebot was initially derived.
+ MIT License (MIT)
