@@ -46,3 +46,7 @@ The parser supports multi-line questions and answers and normalizes whitespace.
 
 - Existing data files were moved from `utils/` into `catebot/data/` without changing their content.
 - This documentation intentionally removes Reddit-specific behavior and references as it is no longer relevant to the codebase.
+
+## License
+
+MIT License. See [LICENSE](../LICENSE).

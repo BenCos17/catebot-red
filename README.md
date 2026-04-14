@@ -34,4 +34,5 @@ CateBot rewritten as a Red-DiscordBot cog for Catechism lookups.
 - The cog reads the existing catechism data files and does not modify their contents.
 
 ## License
- MIT License (MIT)
+
+MIT License. See [LICENSE](LICENSE).
