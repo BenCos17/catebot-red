@@ -1,5 +1,7 @@
 # CateBot Changelog
-
+## April 14th, 026 
+- Added Vatican 2 files to the codebase and added commands 
+- also added a script in the cripts folder for it 
 ### April 14, 2026
 - Reworked project layout to a folder-based Red cog at `catebot/`.
 - Moved Baltimore Catechism text files into `catebot/data/`.

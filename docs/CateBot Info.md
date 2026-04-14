@@ -10,6 +10,7 @@ The cog reads the existing text files from:
 - `catebot/data/bccd_2.txt`
 - `catebot/data/bccd_3.txt`
 - `catebot/data/bccd_4.txt`
+- `catebot/data/vatican2/DV.txt` through `catebot/data/vatican2/IM.txt`
 
 ## Commands
 
@@ -31,6 +32,21 @@ The cog reads the existing text files from:
 - `[p]bccd reload`
 	Owner-only command to reload data from files.
 
+- `[p]vii docs`
+	Lists the available Vatican II documents.
+
+- `[p]vii quote <abbr> <paragraph>`
+	Returns one paragraph from a Vatican II document.
+
+- `[p]vii search <term> [abbr]`
+	Searches Vatican II documents for a term.
+
+- `[p]vii count [abbr]`
+	Counts Vatican II documents or the paragraphs in one document.
+
+- `[p]vii reload`
+	Owner-only command to reload Vatican II data from files.
+
 If `[book]` is omitted, the default is book `2`.
 
 ## Data format
@@ -46,6 +62,7 @@ The parser supports multi-line questions and answers and normalizes whitespace.
 
 - Existing data files were moved from `utils/` into `catebot/data/` without changing their content.
 - This documentation intentionally removes Reddit-specific behavior and references as it is no longer relevant to the codebase.
+- Vatican II documents are stored locally in `catebot/data/vatican2/` and are loaded by the `vii` command group.
 
 ## License
 
